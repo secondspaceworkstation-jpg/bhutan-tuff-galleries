@@ -1,0 +1,25 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "npm install --omit=dev",
+  "outputDirectory": "dist",
+  "functions": {
+    "api/cms.js": {
+      "includeFiles": "dist/api/index.json"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api.php",
+      "destination": "/api/cms"
+    },
+    {
+      "source": "/upload.php",
+      "destination": "/api/cms"
+    }
+  ],
+  "regions": [
+    "bom1"
+  ]
+}

@@ -1,0 +1,14 @@
+brand-source
+scripts
+submissions
+work
+node_modules
+.env
+*.json.bak
+veneer-map.json
+mirror-report.json
+recovery-report.json
+README.md
+.env.local
+.env*.local
+.vercel

@@ -1,0 +1,16 @@
+{
+  "name": "bhutan-tuff-galleries",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bhutan Tuff Galleries: 3D gallery finished in Kai veneers",
+  "scripts": {
+    "dev": "python3 scripts/serve.py",
+    "start": "python3 scripts/serve.py",
+    "rebrand": "python3 scripts/rebrand_gallery.py",
+    "deploy": "npx vercel@65.4.0 deploy --prod"
+  },
+  "type": "module",
+  "dependencies": {
+    "@vercel/blob": "2.8.2"
+  }
+}
